@@ -8,7 +8,7 @@ use Dotit\EntityBundle\Traits\TimestampableTrait;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\TransactionRepository")
+ * @ORM\Entity
  */
 class Transaction
 {

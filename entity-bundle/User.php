@@ -14,7 +14,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * @ORM\Entity
  * @UniqueEntity(
  *     fields={"email"},
  *     message="This email address is already used.",

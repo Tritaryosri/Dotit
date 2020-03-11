@@ -8,7 +8,7 @@ use Dotit\EntityBundle\Traits\SoftDeleteableTrait;
 use Dotit\EntityBundle\Traits\TimestampableTrait;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\TransferRepository")
+ * @ORM\Entity
  */
 class Transfer
 {

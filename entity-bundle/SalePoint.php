@@ -11,7 +11,7 @@ use Dotit\EntityBundle\Traits\SoftDeleteableTrait;
 use Dotit\EntityBundle\Traits\TimestampableTrait;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\SalePointRepository")
+ * @ORM\Entity
  */
 class SalePoint
 {
