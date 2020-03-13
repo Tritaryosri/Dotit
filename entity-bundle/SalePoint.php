@@ -69,7 +69,7 @@ class SalePoint
     // <editor-fold defaultstate="collapsed" desc="relations">
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\User", inversedBy="salePoint", cascade={"persist"})
+     * @ORM\OneToOne(targetEntity="Dotit\EntityBundle\Entity\User", inversedBy="salePoint", cascade={"persist"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $user;

@@ -75,7 +75,7 @@ class VoucherType
     private $vouchers;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\VoucherGenLogs", mappedBy="voucherType", orphanRemoval=true, cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="Dotit\EntityBundle\Entity\VoucherGenLogs", mappedBy="voucherType", orphanRemoval=true, cascade={"persist"})
      */
     private $voucherGenLogs;
     // </editor-fold>

@@ -66,7 +66,7 @@ class Client
 
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\User", mappedBy="client", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="Dotit\EntityBundle\Entity\User", mappedBy="client", cascade={"persist"})
      */
     private $users;
 
@@ -76,9 +76,9 @@ class Client
     }
 
 
-
-
-
+    /**
+     * @return int|null
+     */
     public function getId(): ?int
     {
         return $this->id;

@@ -27,7 +27,7 @@ class Notification
     private $type;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="notifications")
+     * @ORM\ManyToOne(targetEntity="Dotit\EntityBundle\Entity\User", inversedBy="notifications")
      * @ORM\JoinColumn(nullable=false)
      */
     private $user;

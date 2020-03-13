@@ -60,12 +60,12 @@ class Voucher
     private $voucherType;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Wallet", inversedBy="vouchers")
+     * @ORM\ManyToOne(targetEntity="Dotit\EntityBundle\Entity\Wallet", inversedBy="vouchers")
      */
     private $wallet;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\VoucherGenLogs", inversedBy="vouchers")
+     * @ORM\ManyToOne(targetEntity="Dotit\EntityBundle\Entity\VoucherGenLogs", inversedBy="vouchers")
      * @ORM\JoinColumn(nullable=false)
      */
     private $voucherGenLogs;

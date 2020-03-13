@@ -143,37 +143,37 @@ class User implements UserInterface
     // <editor-fold defaultstate="collapsed" desc="relations">
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Balance", mappedBy="user", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Dotit\EntityBundle\Entity\Balance", mappedBy="user", cascade={"persist", "remove"})
      */
     private $balance;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Wallet", mappedBy="user", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Dotit\EntityBundle\Entity\Wallet", mappedBy="user", cascade={"persist", "remove"})
      */
     private $wallet;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\SalePoint", mappedBy="user", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Dotit\EntityBundle\Entity\SalePoint", mappedBy="user", cascade={"persist", "remove"})
      */
     private $salePoint;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Notification", mappedBy="user", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="Dotit\EntityBundle\Entity\Notification", mappedBy="user", orphanRemoval=true)
      */
     private $notifications;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\VoucherGenLogs", mappedBy="user", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="Dotit\EntityBundle\Entity\VoucherGenLogs", mappedBy="user", orphanRemoval=true)
      */
     private $voucherGenLogs;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Transfer", mappedBy="user", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="Dotit\EntityBundle\Entity\Transfer", mappedBy="user", orphanRemoval=true)
      */
     private $transfers;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Client", inversedBy="users")
+     * @ORM\ManyToOne(targetEntity="Dotit\EntityBundle\Entity\Client", inversedBy="users")
      */
     private $client;
 

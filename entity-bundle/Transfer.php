@@ -32,7 +32,7 @@ class Transfer
     private $amount;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="transfers")
+     * @ORM\ManyToOne(targetEntity="Dotit\EntityBundle\Entity\User", inversedBy="transfers")
      * @ORM\JoinColumn(nullable=false)
      */
     private $user;
@@ -43,7 +43,7 @@ class Transfer
     private $pin;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Transaction", inversedBy="transfer", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Dotit\EntityBundle\Entity\Transaction", inversedBy="transfer", cascade={"persist", "remove"})
      */
     private $transaction;
 

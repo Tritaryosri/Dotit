@@ -42,13 +42,13 @@ class Balance
     // <editor-fold defailtstate="collapsed" desc="relations">
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\User", inversedBy="balance", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Dotit\EntityBundle\Entity\User", inversedBy="balance", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $user;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Transaction", mappedBy="balance")
+     * @ORM\OneToMany(targetEntity="Dotit\EntityBundle\Entity\Transaction", mappedBy="balance")
      */
     private $transactions;
 

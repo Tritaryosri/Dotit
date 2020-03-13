@@ -69,12 +69,12 @@ class Transaction
     // <editor-fold defaultstate="collapsed" desc="relations">
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Balance", inversedBy="transactions")
+     * @ORM\ManyToOne(targetEntity="Dotit\EntityBundle\Entity\Balance", inversedBy="transactions")
      * @ORM\JoinColumn(nullable=false)
      */
     private $balance;
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Transfer", mappedBy="transaction", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Dotit\EntityBundle\Entity\Transfer", mappedBy="transaction", cascade={"persist", "remove"})
      */
     private $transfer;
 

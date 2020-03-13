@@ -35,7 +35,7 @@ class Wallet
     // <editor-fold default-state="collapsed" desc="relations">
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\User", inversedBy="wallet", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="Dotit\EntityBundle\Entity\User", inversedBy="wallet", cascade={"persist", "remove"})
      */
     private $user;
 

@@ -47,18 +47,18 @@ class VoucherGenLogs
     // <editor-fold defaultstate="collapsed" desc="relations" >
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="voucherGenLogs")
+     * @ORM\ManyToOne(targetEntity="Dotit\EntityBundle\Entity\User", inversedBy="voucherGenLogs")
      * @ORM\JoinColumn(nullable=false)
      */
     private $user;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Voucher", mappedBy="voucherGenLogs", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="Dotit\EntityBundle\Entity\Voucher", mappedBy="voucherGenLogs", orphanRemoval=true)
      */
     private $vouchers;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\VoucherType", inversedBy="voucherGenLogs", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="Dotit\EntityBundle\Entity\VoucherType", inversedBy="voucherGenLogs", cascade={"persist"})
      * @ORM\JoinColumn(nullable=false)
      */
     private $voucherType;
